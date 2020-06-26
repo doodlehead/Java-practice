@@ -25,11 +25,11 @@ public class MergeTwoSortedLists {
             if (p1 == null) {
                 //add p2, advance the pointer
                 r1.next = new ListNode(p2.val);
-                if (p2 != null) p2 = p2.next;
+                p2 = p2.next;
             } else if (p2 == null) {
                 //add p1, advance the pointer
                 r1.next = new ListNode(p1.val);
-                if (p1 != null) p1 = p1.next;
+                p1 = p1.next;
             } else {
                 if (p1.val < p2.val) {
                     r1.next = new ListNode(p1.val);
