@@ -1,6 +1,8 @@
 public class CountAndSay {
     //n ranges from 1-30
     //Doing it recursively because the problem said so. To me it makes more sense to do iteratively.
+    //Runtime: 2 ms
+    //Memory usage: 38.6 MB
     public String countAndSay(int n) {
         if(n == 1) return "1";
 
